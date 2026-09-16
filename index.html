@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="pageTitle">Blue Tide Seafood — Fresh From the Sea, Served With Passion</title>
+<meta name="description" content="Blue Tide Seafood — fresh Mediterranean-inspired seafood on the Nile Corniche, Zamalek, Cairo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="19" height="19">
+          <path d="M2 12c4-5 9-7 14-5 3 1.2 5 3 6 5-1 2-3 3.8-6 5-5 2-10 0-14-5z"/>
+          <circle cx="16" cy="10.5" r="0.7" fill="#fff"/><path d="M16.5 7c1 1.6 1 3.4 0 5"/>
+        </svg>
+      </span>
+      <span data-i18n="brand">Blue Tide Seafood</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+      <a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="lang-btn" id="langBtn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="15" height="15" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/>
+        </svg>
+        <span id="langBtnText">AR</span>
+      </button>
+      <a href="#reserve" class="btn btn-primary nav-reserve" data-i18n="nav.reserve">Reserve a Table</a>
+      <button class="hamburger" id="hamburger" type="button" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#home" data-i18n="nav.home">Home</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#menu" data-i18n="nav.menu">Menu</a>
+  <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+  <a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a>
+  <a href="#reserve" class="btn btn-primary" data-i18n="nav.reserve">Reserve a Table</a>
+</div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img id="heroImg" src="" alt="" fetchpriority="high">
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-inner">
+    <span class="hero-badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="16" height="16" aria-hidden="true">
+        <path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+      </svg>
+      <span data-i18n="hero.badge">Fresh Seafood Delivered Daily</span>
+    </span>
+    <h1 data-i18n="hero.title">Fresh From the Sea, Served With Passion</h1>
+    <p class="lead" data-i18n="hero.lead">Experience the finest seafood in Cairo, prepared daily with fresh ingredients, bold flavors, and a touch of Mediterranean inspiration.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary" data-i18n="hero.menuBtn">View Our Menu</a>
+      <a href="#reserve" class="btn btn-outline" data-i18n="hero.reserveBtn">Reserve a Table</a>
+    </div>
+    <div class="hero-chips">
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FF6B4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+          <path d="M2 12c4-5 9-7 14-5 3 1.2 5 3 6 5-1 2-3 3.8-6 5-5 2-10 0-14-5z"/><circle cx="16" cy="10.5" r="0.7" fill="#FF6B4A"/>
+        </svg>
+        <span><strong data-i18n="hero.chip1t">Daily Catch</strong><span data-i18n="hero.chip1s">Sourced every morning</span></span>
+      </span>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F4E8D0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+          <path d="M7 21h10M9 21v-6M15 21v-6"/><path d="M6 9a4 4 0 0 1 4-4 2.5 2.5 0 0 1 4.9-1A3 3 0 0 1 18 9a2 2 0 0 1-.6 4H6.6A2 2 0 0 1 6 9z"/>
+        </svg>
+        <span><strong data-i18n="hero.chip2t">Expert Chefs</strong><span data-i18n="hero.chip2s">Mediterranean craft</span></span>
+      </span>
+    </div>
+  </div>
+
+  <div class="hero-waves" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path fill="#FFFDF8" d="M0,50 C240,90 480,10 720,40 C960,70 1200,20 1440,50 L1440,100 L0,100 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-art">
+      <img id="aboutImg" src="" alt="" loading="lazy">
+      <div class="about-stamp">
+        <strong data-i18n="about.stampNum">12</strong>
+        <span data-i18n="about.stampTxt">years on the Corniche</span>
+      </div>
+    </div>
+    <div class="about-copy">
+      <span class="kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="11" aria-hidden="true">
+          <path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+        </svg>
+        <span data-i18n="about.kicker">Our Story</span>
+      </span>
+      <h2 data-i18n="about.title">A Taste of the Mediterranean</h2>
+      <p data-i18n="about.body">At Blue Tide Seafood, we believe great food begins with fresh ingredients.</p>
+
+      <div class="highlights">
+        <div class="highlight">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+              <path d="M2 12c4-5 9-7 14-5 3 1.2 5 3 6 5-1 2-3 3.8-6 5-5 2-10 0-14-5z"/><circle cx="16" cy="10.5" r="0.7" fill="currentColor"/>
+            </svg>
+          </span>
+          <div><h4 data-i18n="about.h1t">Fresh Daily Catch</h4><p data-i18n="about.h1s"></p></div>
+        </div>
+        <div class="highlight">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+              <path d="M7 21h10M9 21v-6M15 21v-6"/><path d="M6 9a4 4 0 0 1 4-4 2.5 2.5 0 0 1 4.9-1A3 3 0 0 1 18 9a2 2 0 0 1-.6 4H6.6A2 2 0 0 1 6 9z"/>
+            </svg>
+          </span>
+          <div><h4 data-i18n="about.h2t">Experienced Chefs</h4><p data-i18n="about.h2s"></p></div>
+        </div>
+        <div class="highlight">
+          <span class="highlight-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="22">
+              <path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/>
+            </svg>
+          </span>
+          <div><h4 data-i18n="about.h3t">Warm Coastal Atmosphere</h4><p data-i18n="about.h3s"></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section id="menu" class="menu">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="11" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
+        <span data-i18n="menu.kicker">Our Menu</span>
+      </span>
+      <h2 data-i18n="menu.title">Dishes Worth The Tide</h2>
+      <p data-i18n="menu.sub"></p>
+    </div>
+
+    <div class="filters" id="filters" role="group"></div>
+    <div class="menu-grid" id="menuGrid"></div>
+
+    <div class="menu-footer-btn">
+      <a href="#reserve" class="btn btn-ocean" data-i18n="menu.full">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="11" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
+        <span data-i18n="gallery.kicker">Gallery</span>
+      </span>
+      <h2 data-i18n="gallery.title">A Look Inside Blue Tide</h2>
+      <p data-i18n="gallery.sub"></p>
+    </div>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" hidden>
+  <div class="lightbox-content">
+    <button class="lb-close" id="lbClose" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lb-nav lb-prev" id="lbPrev" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button class="lb-nav lb-next" id="lbNext" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <img id="lbImg" src="" alt="">
+    <p class="lightbox-cap" id="lbCap"></p>
+  </div>
+</div>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <div class="section-head center">
+      <span class="kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="11" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
+        <span data-i18n="tst.kicker">Testimonials</span>
+      </span>
+      <h2 data-i18n="tst.title">What Our Guests Say</h2>
+      <p data-i18n="tst.sub"></p>
+    </div>
+    <div class="t-grid" id="tGrid"></div>
+  </div>
+</section>
+
+<!-- ============ RESERVATION ============ -->
+<section id="reserve" class="reserve">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="22" height="11" aria-hidden="true"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
+        <span data-i18n="res.kicker">Reservation</span>
+      </span>
+      <h2 data-i18n="res.title">Reserve Your Table</h2>
+      <p data-i18n="res.sub"></p>
+    </div>
+
+    <div class="reserve-grid">
+      <form class="r-form" id="resForm" novalidate>
+        <div class="r-row">
+          <div class="field">
+            <label for="name" data-i18n="res.name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-err">
+            <span class="err-msg" id="name-err"></span>
+          </div>
+          <div class="field">
+            <label for="phone" data-i18n="res.phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" dir="ltr" aria-describedby="phone-err">
+            <span class="err-msg" id="phone-err"></span>
+          </div>
+        </div>
+        <div class="r-row">
+          <div class="field">
+            <label for="email" data-i18n="res.email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" dir="ltr" aria-describedby="email-err">
+            <span class="err-msg" id="email-err"></span>
+          </div>
+          <div class="field">
+            <label for="guests" data-i18n="res.guests">Number of guests</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" aria-describedby="guests-err">
+            <span class="err-msg" id="guests-err"></span>
+          </div>
+        </div>
+        <div class="r-row">
+          <div class="field">
+            <label for="date" data-i18n="res.date">Date</label>
+            <input type="date" id="date" name="date" aria-describedby="date-err">
+            <span class="err-msg" id="date-err"></span>
+          </div>
+          <div class="field">
+            <label for="time" data-i18n="res.time">Time</label>
+            <input type="time" id="time" name="time" aria-describedby="time-err">
+            <span class="err-msg" id="time-err"></span>
+          </div>
+        </div>
+        <div class="field notes-field">
+          <label for="notes" data-i18n="res.notes">Special requests</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+          <span class="err-msg"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary r-submit" data-i18n="res.submit">Confirm Reservation</button>
+
+        <div class="note-box note-ok" id="resSuccess" hidden role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/>
+          </svg>
+          <div>
+            <strong data-i18n="res.okTitle">Reservation received</strong>
+            <span id="resSummary"></span>
+          </div>
+        </div>
+      </form>
+
+      <div class="r-side">
+        <div class="r-block">
+          <h4 data-i18n="res.hours">Opening Hours</h4>
+          <ul>
+            <li><span data-i18n="res.satThu">Saturday – Thursday</span><span data-i18n="res.satThuH">12:00 PM – 12:00 AM</span></li>
+            <li><span data-i18n="res.fri">Friday</span><span data-i18n="res.friH">1:00 PM – 1:00 AM</span></li>
+          </ul>
+        </div>
+        <div class="r-block">
+          <h4 data-i18n="res.contact">Contact Information</h4>
+          <p class="r-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+              <path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/>
+            </svg>
+            <span data-i18n="res.address">25 Nile Corniche, Zamalek, Cairo, Egypt</span>
+          </p>
+          <a class="r-contact" href="tel:+201005552847">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+              <path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2C9.5 22 2 14.5 2 6a2 2 0 0 1 2-2z"/>
+            </svg>
+            <span dir="ltr">+20 100 555 2847</span>
+          </a>
+          <a class="r-contact" href="mailto:hello@bluetideseafood.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+            </svg>
+            <span dir="ltr">hello@bluetideseafood.com</span>
+          </a>
+        </div>
+        <div class="map-embed"><img id="mapImg" src="" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#FF6B4A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+            <path d="M2 12c4-5 9-7 14-5 3 1.2 5 3 6 5-1 2-3 3.8-6 5-5 2-10 0-14-5z"/><circle cx="16" cy="10.5" r="0.7" fill="#FF6B4A"/>
+          </svg>
+          <span data-i18n="brand">Blue Tide Seafood</span>
+        </div>
+        <p class="f-about" data-i18n="foot.about"></p>
+        <div class="f-social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13.5 21v-7.9h2.6l.4-3h-3V8.1c0-.9.2-1.5 1.5-1.5h1.6V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.2v2.4H7v3h2.7V21z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M14 3c.4 2.2 2 3.7 4.2 4v2.8c-1.5 0-2.9-.4-4.1-1.2v6.2A5.7 5.7 0 1 1 8.6 9v2.9a2.8 2.8 0 1 0 2.6 2.8V3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h5 data-i18n="foot.navigate">Navigate</h5>
+        <ul>
+          <li><a href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#menu" data-i18n="nav.menu">Menu</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonials</a></li>
+          <li><a href="#reserve" data-i18n="nav.reserve">Reserve a Table</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 data-i18n="foot.hours">Hours</h5>
+        <ul>
+          <li data-i18n="foot.hoursShort1"></li>
+          <li data-i18n="foot.hoursShort2"></li>
+        </ul>
+        <h5 class="mt" data-i18n="foot.contact">Contact</h5>
+        <ul>
+          <li data-i18n="res.address"></li>
+          <li dir="ltr">+20 100 555 2847</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 data-i18n="foot.news">Stay In The Loop</h5>
+        <p class="f-newssub" data-i18n="foot.newsSub"></p>
+        <form class="newsletter" id="newsForm">
+          <input type="email" id="newsEmail" required>
+          <button type="submit" data-i18n="foot.subscribe">Subscribe</button>
+        </form>
+        <p class="news-done" id="newsDone" hidden data-i18n="foot.subscribed"></p>
+      </div>
+    </div>
+    <p class="copyright" data-i18n="foot.rights">© 2026 Blue Tide Seafood. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
